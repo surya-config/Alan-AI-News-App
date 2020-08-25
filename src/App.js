@@ -15,7 +15,7 @@ function App() {
     alanBtn({
       key:
         "9d113d969a556d789828c6eb1dca741a2e956eca572e1d8b807a3e2338fdd0dc/stage",
-      onCommand: ({ command, articles, number }) => {
+      onCommand: ({ command, number, articles }) => {
         if (command === "newHeadLines") {
           setNewsArticles(articles);
         } else if (command === "highlight") {
